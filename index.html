@@ -55,11 +55,10 @@
           <li class="nav-item">
             <a class="nav-link" href="#rangkuman">Rangkuman Klaster</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#kelas">Pembagian Kelas</a>
-          </li>
+          </li> -->
         </ul>
-        <button class="btn btn-outline-light btn-sm" id="toggleTheme">🌙 Mode Gelap</button>
       </div>
     </div>
   </nav>
@@ -79,20 +78,13 @@
 
     <!-- Rangkuman Klaster -->
     <section id="rangkuman" class="mb-5">
-      <h2 class="mb-3">2. Rangkuman Hasil Clustering</h2>
+      <h2 class="mb-3">2. Rangkuman Hasil Clustering dan Pembagian Kelas Berdasarkan Prestasi</h2>
       <div class="ratio ratio-16x9">
         <iframe src="sources/hasil_klaster_dan_kelas.html" allowfullscreen></iframe>
       </div>
     </section>
 
-    <!-- Pembagian Kelas -->
-    <section id="kelas">
-      <h2 class="mb-3">3. Pembagian Kelas Berdasarkan Prestasi</h2>
-      <div class="ratio ratio-16x9">
-        <iframe src="sources/hasil_klaster_dan_kelas.html" allowfullscreen></iframe>
-      </div>
-    </section>
-
+  
     <!-- Footer -->
     <footer>
       <p>&copy; 2025 | Visualisasi oleh <strong>Annisa Iksanti</strong></p>
@@ -103,18 +95,7 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Theme Toggle Script -->
-  <script>
-    const toggleBtn = document.getElementById('toggleTheme');
-    const body = document.body;
 
-    toggleBtn.addEventListener('click', () => {
-      const currentTheme = body.getAttribute('data-bs-theme');
-      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      body.setAttribute('data-bs-theme', newTheme);
-      toggleBtn.innerText = newTheme === 'light' ? '🌙 Mode Gelap' : '☀️ Mode Terang';
-    });
-  </script>
 
 </body>
 </html>
